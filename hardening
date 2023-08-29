@@ -1,0 +1,21 @@
+linux mint hardening guide
+linux firejail
+
+https://easylinuxtipsproject.blogspot.com/p/sandbox.html
+sudo apt-get install firejail
+firejail firefox
+
+create a desktop shortcut that launches Firefox in a sandbox by default.
+a right-click with your mouse on the icon of Firefox in the menu - Add to desktop. Then right-click on the newly created desktop shortcut - Properties - Command: change this into:
+firejail firefox %u
+
+firejail --tree
+
+Press Enter.
+
+With that command you can check whether Firefox is indeed running in sandbox mode.
+
+
+
+firejail google-chrome-stable
+

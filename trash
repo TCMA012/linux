@@ -1,0 +1,5 @@
+Linux mint trash
+
+rm -rf ~/.local/share/Trash/*
+
+alias trash='rm -rf ~/.local/share/Trash/*'

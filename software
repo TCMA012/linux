@@ -1,0 +1,156 @@
+software
+cat /etc/linuxmint/info
+
+
+
+Linux Mint 20.3 after install
+Cinnamon
+
+
+
+https://itsfoss.com/things-to-do-after-installing-linux-mint-20/
+https://averagelinuxuser.com/linuxmint20-after-install/
+
+
+
+sudo apt update && sudo apt upgrade -y
+
+sudo apt install mint-meta-codecs
+
+sudo apt autoremove
+
+apt search
+
+apt list --installed
+
+sudo apt-get remove package-name1 package-name2
+
+
+
+   Firewall
+sudo ufw enable 
+sudo systemctl status ufw
+
+
+sudo apt install chromium
+
+??? sudo apt install chromium-browser
+
+sudo apt clean 
+
+
+
+apt-get
+-q/--quiet
+-y/--yes
+
+
+launch
+
+
+
+Unlike Google Chrome, which has an automatic software update included, 
+Chromium does not update itself or prompt the user to install an update.
+In Ubuntu, Chromium (like other pieces of software that are installed on your computer) will update automatically when a new version is available. Updates are controlled by an application called Update Manager.
+Depending on how you've configured Update Manager, it will check for updates at the following intervals:
+
+    Daily
+    Every two days
+    Weekly
+    Every two weeks
+
+When Update Manager finds updated software, it will automatically launch. You can also launch Update Manager by selecting 
+System > Administration > Update Manager. 
+If you manually launch Update Manager, you'll need to click the Check button for Update Manager to check for new versions of software.
+
+
+
+make your LibreOffice look similar to Microsoft’s office:
+Open LibreOffice Writer → View → User Interface → Enable Single Toolbar & Tabbed interface.
+
+LibreOffice with Microsoft's office like menubar.
+Open LibreOffice Writer → Tools → Options → Icon style → Select Colibre.
+
+
+Open Startup Applications → Disable services you don’t use.
+
+Click on the + button → Choose Application → Select an application → Add Application.
+
+
+
+Open Menu → Right-click on an app that you would like to remove → Uninstall.
+
+
+
+
+https://vscodium.com/
+VSCodium is Microsoft’s editor VS Code minus Microsoft telemetry and branding.
+   Add the GPG key of the repository:
+wget -qO - https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/raw/master/pub.gpg \
+    | gpg --dearmor \
+    | sudo dd of=/usr/share/keyrings/vscodium-archive-keyring.gpg
+
+   Add the repository:
+echo 'deb [ signed-by=/usr/share/keyrings/vscodium-archive-keyring.gpg ] https://download.vscodium.com/debs vscodium main' \
+    | sudo tee /etc/apt/sources.list.d/vscodium.list
+
+   Update then install vscodium:
+sudo apt update && sudo apt install codium
+
+
+
+Meld: Visual Diff and Merge tool for Linux (and Windows)
+
+
+
+use the Software Center to install additional apps.
+Dropbox
+Zoom
+Spotify
+Steam
+Skype
+Slack
+
+
+
+firefox
+
+
+https://linuxmint-user-guide.readthedocs.io/_/downloads/en/latest/pdf/
+
+Warning: Linux Mint 20 shipped with a package called ippusbxd. This package prevents many printers from
+working correctly. If this package is installed on your computer, remove it and reboot.
+
+chmod a+rx ./linux-brprinter-installer*
+sudo ./linux-brprinter-installer*
+
+
+
+Linux md viewer 
+standalone editor - Remarkable
+
+browser addon Markdown
+chrome Markdown
+https://chrome.google.com/webstore/detail/markdown-viewer/ckkdlimhmcjmikdlpkmbgfkaikojcbjk
+https://github.com/simov/markdown-viewer
+Markdown Viewer
+simov.github.io
+Updated
+24 December 2020
+Size
+229KiB
+100,000+ users
+GitHub Flavored Markdown (GFM)
+Auto reload on file change
+Local Files
+
+1. Navigate to `chrome://extensions`
+2. Locate Markdown Viewer and click on the `DETAILS` button
+3. Make sure that the `Allow access to file URLs` switch is turned on
+
+✚ Remote Files
+
+1. Click on the Markdown Viewer icon and select `Advanced Options`
+2. Add the origin that you want enabled for the Markdown Viewer extension
+
+

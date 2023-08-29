@@ -1,0 +1,2 @@
+How to increase the number of recent files listed in the XED text editor
+gsettings set org.x.editor.preferences.ui max-recents 50
